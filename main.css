@@ -1,0 +1,454 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background: url(img/rotterdam.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.black {
+    color:black;
+}
+.invisibale{
+    display: none;
+}
+
+.box {
+    width:500px;
+    background: #ee5b2b;
+    color:black;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    line-height: 1.4;
+    margin-top: 5%;
+    font-family: 'PT Serif', serif, 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* font-family: 'Century Gothic',sans-serif; */
+}
+.box-image {
+    max-width: 100%;
+    border-radius: 50%;
+    width:200px;
+}
+.white {
+    color:white;
+}
+/* .info p{
+
+} */
+
+.box h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+.box h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    padding:10px 0;
+    /* border-bottom: 1px solid white; */
+}
+.box h3{
+    letter-spacing: 3px;
+    font-weight: 100;
+    border-bottom: 2px solid white;
+    padding: 1rem;
+}
+.box p{
+    text-align: justify;
+}
+.box li{
+    display: inline-block;
+    margin: 10px;
+    list-style: none;
+}
+.box li a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+    color:black;
+}
+/* ###################################
+section projects
+################################### */
+.projects {
+    width:500px;
+    color:white;
+    padding: 40px 0;
+    margin: auto;
+    margin-top:1rem;
+    /* font-family: 'Century Gothic',sans-serif; */
+    display: flex;
+    justify-content: space-between;
+}
+.card-container{
+    width:240px;
+    height:420px;
+    /* height:480px; */
+    position: relative;
+}
+
+.card figure{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    transition: transform .3s;
+    /* Note: display flex can't be because we need display:none */
+}
+.card figure:hover {
+    transform: scale(1.05);
+}
+/* Note transform-style:preserve-3d; doen't work in IE */
+.card{
+    width:100%;
+    height:100%;
+    /* transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+    -ms-transform-style: flat; ???*/
+}
+/* .card-container:hover .card{
+    transform: rotateY(180deg);
+    -ms-transform: rotateY( 180deg );
+} */
+
+.card .front{
+    background: #ee5b2b;
+    text-align: center;
+    padding-top:5rem;
+    /* Note: display flex can't be because we need display:none */
+    padding-left: 0;
+    letter-spacing: 3px;
+}
+.front h3{
+    font-weight: 100;
+    color:black;
+}
+.card .back{
+    background: #2b652b;
+    /*transform: rotateY(180deg); */
+    letter-spacing: 3px;
+}
+.let3{
+    font-weight: 100;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+    margin:.5rem 1rem 1rem 0;
+    text-align: center;
+}
+.shift {
+    padding-left:2rem;
+}
+.shift-nested {
+    padding-left:2rem;
+    list-style-type: square;
+}
+.card-container a{
+    color:white;
+    text-decoration: none;
+}
+/* ################################
+section == Skills
+################################ */
+.skills {
+    background: #ee5b2b;
+    /* background:rgba(86,3,3,0.9); */
+    /* background: gray; */
+    width:500px;
+    padding:40px;
+    margin: auto;
+    margin-top: 40px;
+    color:rgba(254,254,254,0.9);
+    letter-spacing: 3px;
+}
+.skills h1 {
+    font-size: 30px;
+    padding:6px 0 10px;
+    border-bottom:3px solid black;
+    margin:0 0 10px  0;
+
+}
+.skills h3{
+    font-size: 20px;
+    margin: 6px 0;
+    font-weight: 100;
+}
+
+.skills div{
+    width:100%;
+    background: white;
+    height:25px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.django-bar::before{
+    content:"";
+    position: absolute;
+    width:40%;
+    height:25px;
+    left:0;
+    background-color: gray;
+}
+.rest-bar::before{
+    content:"";
+    position: absolute;
+    width:25%;
+    height:25px;
+    left:0;
+    background-color: gray;
+}
+.js-bar::before{
+    content:"";
+    position: absolute;
+    width:30%;
+    height:25px;
+    left:0;
+    background-color: gray;
+}
+.vue-bar::before{
+    content:"";
+    position: absolute;
+    width:20%;
+    height:25px;
+    left:0;
+    background-color: gray;
+}
+.html-bar::before{
+    content:"";
+    position: absolute;
+    width:60%;
+    height:25px;
+    left:0;
+    background-color: gray;
+}
+.css-bar::before{
+    content:"";
+    position: absolute;
+    width:60%;
+    height:25px;
+    left:0;
+    background-color: gray;
+}
+.jq-bar::before{
+    content:"";
+    position: absolute;
+    width:25%;
+    height:25px;
+    left:0;
+    background-color: gray;
+}
+/* #########################
+looking for
+######################### */
+.testimonials {
+    background: #ee5b2b;
+    width:500px;
+    padding:10px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 2rem;
+    color:rgba(254,254,254,0.9);
+    letter-spacing: 3px;
+}
+.inner {
+    max-width: 100%;
+    margin:auto;
+    overflow: hidden;
+    padding:0 10px;
+}
+.inner h1{
+    text-align: center;
+}
+.border {
+    width:200px;
+    height:5px;
+    background: black;
+    /* #319031; */
+    margin: 26px auto;
+}
+.inner h1 {
+    font-size: 30px;
+    margin:0 0 10px  0;
+    font-weight: 200;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.col {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding:3px;
+    margin:3px;
+    background: gray;
+    /* background: #319031; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+.testimonial {
+    width:100%;
+    height: 200px;
+    margin-top:1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonial img{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.function{
+    font-size: 16px;
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+@media screen and (max-width:960px){
+    .col {
+        flex: 100%;
+        max-width: 80%;
+    }
+}
+@media screen and (max-width:600px){
+    .col {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+/* ############ animation ninja's############# */
+.container,.containerLeft,.containerRight {
+    width:80px;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img,.imgLeft,.imgRight {
+    width:100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+.container:hover,.containerLeft:hover,.containerRight:hover{
+    transform: scale(1.2);
+    transition: transform .5s ease-in-out;
+}
+
+.letters,.lettersLeft,.lettersRight {
+    position: absolute;
+    color:white;
+    width: 80px;
+    height: 80px;
+    padding-top:50%;
+    text-align: center;
+    opacity: 0;
+    z-index: -1
+}
+
+.visible{
+    opacity: 1;
+    z-index: 1;
+    transition: z-index .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+
+}
+.change{
+    z-index: -1;
+    opacity: 0.5;
+    transition: z-index .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+/* ##############
+contact form
+############## */
+.contact {
+    width:500px;
+    background: #ee5b2b;
+    padding: 40px;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top:1rem;
+    max-width: 100%;
+}
+.contact-form {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+.contact-form > label{
+    color:black;
+    text-align: center;
+    font-weight: bold;
+}
+.form-item{
+    margin:1rem 0 0 ;
+}
+.inp{
+    border-radius: 5px;
+    padding:.5rem;
+    margin-top: .5rem;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: none;
+    /* color: */
+}
+.sendMsg {
+      width:200px;
+      padding: 0.5rem 1rem;
+      background-color: #333333;
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: inline-block;
+      border-radius: 3px;
+      transition: background-color 200ms ease;
+      outline: none;
+      cursor: pointer;
+
+}
+/* #########################
+scroll to top button
+######################### */
+#toTop {
+  display: none; /*default */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #ee5b2b;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#toTop:hover {
+  background-color: #555; 
+}
