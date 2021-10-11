@@ -196,7 +196,7 @@ section == Skills
 .django-bar::before{
     content:"";
     position: absolute;
-    width:40%;
+    width:35%;
     height:25px;
     left:0;
     background-color: gray;
@@ -236,7 +236,7 @@ section == Skills
 .css-bar::before{
     content:"";
     position: absolute;
-    width:60%;
+    width:50%;
     height:25px;
     left:0;
     background-color: gray;
@@ -244,7 +244,23 @@ section == Skills
 .jq-bar::before{
     content:"";
     position: absolute;
-    width:25%;
+    width:15%;
+    height:25px;
+    left:0;
+    background-color: gray;
+}
+.git-bar::before{
+    content:"";
+    position: absolute;
+    width:5%;
+    height:25px;
+    left:0;
+    background-color: gray;
+}
+.linux-bar::before{
+    content:"";
+    position: absolute;
+    width:5%;
     height:25px;
     left:0;
     background-color: gray;
