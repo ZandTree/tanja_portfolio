@@ -97,7 +97,7 @@ section projects
 
 .card figure{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     position: absolute;
     border-radius: 5px;
     cursor: pointer;
@@ -123,7 +123,7 @@ section projects
 } */
 
 .card .front{
-    background: #ee5b2b;
+    background: #e59176;
     text-align: center;
     padding-top:5rem;
     /* Note: display flex can't be because we need display:none */
@@ -135,7 +135,7 @@ section projects
     color:black;
 }
 .card .back{
-    background: #2b652b;
+    background:#3f633f;
     /*transform: rotateY(180deg); */
     letter-spacing: 3px;
 }
