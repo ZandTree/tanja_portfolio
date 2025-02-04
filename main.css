@@ -89,9 +89,9 @@ section projects
     justify-content: space-between;
 }
 .card-container{
-    width:240px;
-    height:420px;
-    /* height:480px; */
+    width: 500px;
+    height:320px;
+    margin:auto;    
     position: relative;
 }
 
@@ -123,14 +123,15 @@ section projects
 } */
 
 .card .front{
-    background: #e59176;
+    background: #b3b4ac;
     text-align: center;
-    padding-top:5rem;
+    padding-top:8rem;
+    /* padding-top:5rem; */
     /* Note: display flex can't be because we need display:none */
     padding-left: 0;
-    letter-spacing: 3px;
+    letter-spacing: 3px;    
 }
-.front h3{
+.front h2{
     font-weight: 100;
     color:black;
 }
